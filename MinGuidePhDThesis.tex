@@ -1,0 +1,77 @@
+
+\documentclass[11pt]{article}
+\usepackage{url}
+\usepackage{hyperref}
+\newcommand{\mbf}[1]{{\bfseries #1}}
+\begin{document}
+\title{{\bfseries  Minimalist User Guide to Write Ph.D. Thesis}}
+\author{Spartrekus, Developper}
+\date{2017-Jun-25}
+\maketitle
+
+
+\section{Introduction}
+The aim of this manuscript is to guide 
+the new user to understand and to progress in the use
+of \LaTeX.
+
+\section{Installation}
+There are many possibilities to compile a \LaTeX document.
+Texlive is widely available and it is easy to install.
+Texlive is available on most Unix-like distributions such as OpenBSD and FreeBSD.
+But, Texlive is also available on other platforms, such as Windows, Mac and Linux.
+
+The most simple, efficient, method to install texlive is to use 
+apt-get on Devuan based systems. 
+The command look as follows: 
+\begin{itemize}
+\item apt-get install --no-install-recommends texlive
+\end{itemize}
+
+You would have an editor that allow you to write on terminal, X11, but also
+on operating systems, such as Mac OS X or Windows.
+If you would like to work anywhere on any operating system, a good choice is 
+to install the editor \mbf{vim}, which is available on most platforms. 
+There is also a great editor \mbf{emacs} is very powerful. Both are good companions 
+of Texlive.
+
+This method will allow you 
+to install required packages of about 150 Mb for Texlive and
+less than 50 Mb for \mbf{vim}. 
+
+\section{Description}
+There are several templates for Ph.d. thesis, which are available in the 
+reference Spartrekus~\cite{spartrekus2324898}.
+It describes 11 examples of Ph.d. thesis templates. The first templates 
+are very basic and it allows make a less complex manuscript.
+The example 05 gives a cover with a picture of the university.
+The examples, numbered with more than ex.6, are more complex and 
+they give a beautiful looking.
+
+The most difficult part is probably the references which need to be 
+formatted in order appearance. 
+There is a nice example from Spartrekus~\cite{spartrekus2324897}.
+This example gives a Makefile, which allows to automatically bring
+the manuscript in form, and to display it using mupdf. 
+
+
+\section{Conclusion}
+The main results of this manuscript were to give a short overview of \LaTeX
+and to give a minimalist approach to build simple manuscripts.
+It gave several information about:
+\begin{itemize}
+\item Installation of Texlive on a Devuan based system
+\item Possible choice of editor such as \mbf{vim} and \mbf{emacs}
+\item Good starting examples for Ph.D. templates, which can be later adapted depending on user preferences.
+\item Simple method to build the references of the manuscript, avoiding software bloat and without having large installation.
+\item The installation and method are based on well known softwares, which have more than 20 years of user application (vim, emacs, bibtex,...).
+\end{itemize}
+
+\bibliography{mybib}{}
+%\bibliographystyle{plain}
+\bibliographystyle{ieeetr}
+
+
+\end{document}
+
+
